@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeOfElon/forums</title>
+    <link rel="stylesheet" href="forums.css">
+</head>
+<body>
+
+  <nav> <!-- Skapar en navigationsbar -->
+    <div class="Logo"> <!-- Skapar en klass -->
+     <h1>LIFEOFELON</h1> <!-- Skapar en rubrik -->
+    </div> <!-- Avslutar taggen -->
+    <ul> <!-- Skapar en oordnad lista -->
+      <li><a href="about.html">ABOUT</a></li> <!-- Gör att man kan ta sig till en annan sida genom länken -->
+      <li><a href="spacex.html">SPACEX</a></li> <!-- Gör att man kan ta sig till en annan sida genom länken -->
+      <li><a href="tesla.html">TESLA</a></li> <!-- Gör att man kan ta sig till en annan sida genom länken -->
+      <li><a href="forums.html">FORUMS</a></li> <!-- Gör att man kan ta sig till en annan sida genom länken -->
+    </ul> <!-- Avslutar taggen -->
+ </nav> <!-- Avslutar taggen -->
+<main> <!-- Specificerar huvudinnehållet inom ett dokument-->
+ <div class="Forms"> <!-- Skapar en klass -->  
+   <p>Vilken Tesla tycker du om mest?</p> <!-- Skapar en paragraf/textfält -->
+   <form action="forums.html" method="get"> <!-- Skapar ett formulär -->
+    <input type="checkbox" id="html" name="fav_language"> <!-- Tillverkar ett fält med användarinmatning -->
+    <label for="html">Model X</label><br> <!-- Ger ett namn till flera element -->
+    <input type="checkbox" id="css" name="fav_language"> <!-- Tillverkar ett fält med användarinmatning -->
+    <label for="css">Model Y</label><br> <!-- Ger ett namn till flera element -->
+    <input type="checkbox" id="javascript" name="fav_language"> <!-- Tillverkar ett fält med användarinmatning -->
+    <label for="javascript">Model S</label> <!-- Ger ett namn till flera element -->
+   </form> <!-- Avslutar ett formulär -->
+   <p>Vad tycker du om Elon Musk?</p> <!-- Skapar en paragraf/textfält -->
+   <form> <!-- Skapar ett formulär -->
+    <input type="radio" id="Answer1" name="fav_language"> <!-- Tillverkar ett fält med användarinmatning -->
+    <label for="Answer1">Bra</label><br> <!-- Ger ett namn till flera element -->
+    <input type="radio" id="Answer2" name="fav_language"> <!-- Tillverkar ett fält med användarinmatning -->
+    <label for="Answer2">Dålig</label><br> <!-- Ger ett namn till flera element -->
+    <input type="radio" id="Answer3" name="fav_language"> <!-- Tillverkar ett fält med användarinmatning -->
+    <label for="Answer3">Vet ej</label><br> <!-- Ger ett namn till flera element -->
+    <p>Andra åsikter?</p> <!-- Skapar en paragraf/textfält -->
+    <textarea id="textarea" name="fav_language" rows="4" cols="50">Skriv här:</textarea><br> <!-- Skapar ett textfält där man får skriva fritt -->
+    <label for="textarea">Andra åsikter?</label><br> <!-- Ger ett namn till flera element -->
+    <label for="txt">Användarnamn:</label> <!-- Ger ett namn till flera element -->
+    <input type="text" id="txt" name="txt"> <!-- Skapar ett användarnamnsfält -->  
+    <label for="pwd">Lösenord:</label> <!-- Ger ett namn till flera element -->
+    <input type="password" id="pwd" name="pwd"> <!-- Skapar ett lösenordsfält -->     
+    <input type="submit" value="submit"> <!-- Gör att Submit-knappen skickar informationen som las in av användaren -->
+   </form> <!-- Avslutar ett formulär -->
+   <p>Tack för din medverkan!</p> <!-- Skapar en paragraf/textfält -->
+ </div> <!-- Avslutar klassen -->
+</main> <!-- Avslutar taggen -->
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+*{
+    margin:0px; /*Skapar mellanrum runt element*/
+    padding:0px; /*Skapar mellanrum runt element, innanför borders*/
+    box-sizing:border-box; /*Gör att "padding" och "border" kan inkluderas i höjden och bredden*/
+    font-family:'Courier New'; /*Bestämmer vilken font en text ska ha*/
+    color:#ffffff; /*Bestämmer färg på texterna*/
+}
+
+/*LoVe Focus HAte*/
+
+a:link{ /*När man trycker på obesökta länkar*/
+    color:rgb(255, 255, 255); /*Ger en viss färg till länken*/
+} 
+
+a:visited{ /*När man har besökt länken*/
+    color:rgb(226, 11, 208); /*Ger en viss färg till länken*/
+}
+
+a:focus{ /*När man t.ex använder tab-funktionen på tangentbordet så lyser länkarna med grön färg*/
+    color:rgb(19, 228, 19); /*Ger en viss färg till länken*/
+}
+
+a:hover{ /*När muspekaren ligger på länken*/
+    color:aqua; /*Ger en viss färg till länken*/
+}
+
+a:active{ /*När länken är nedtryckt*/
+    color:black; /*Ger en viss färg till länken*/
+}
+
+nav{
+    width:100%; /*Bestämmer bredd på vår navbar*/
+    height:75px; /*Bestämmer höjd på vår navbar*/
+    background-color:rgb(107, 102, 102); /*Bestämmer bakgrundsfärg på vår navbar*/
+    line-height:75px; /*Bestämmer linje-höjd på vår navbar*/
+    padding:0px 100px; /*Skapar mellanrum runt element, innanför borders*/
+}
+
+nav .Logo{
+    font-size:45px; /*Bestämmer storlek på text*/
+    font-weight:bold; /*Bestämmer tjocklek på text*/
+    letter-spacing:1.5px; /*Bestämmer avståndet mellan varje bokstav i en text*/
+}
+
+nav .Logo h1{
+    float:left; /*Gör att elementet "flyter" åt vänster*/
+    color:azure; /*Bestämmer färg på vår logga*/
+}
+
+nav ul{
+    float:right; /*Gör att vår icke-ordnade lista "flyter" åt höger*/
+}
+
+nav ul li{
+    display:inline-block; /*Gör att våra list-objekt kan anta enga höjd- och breddvärden*/
+    list-style:none; /*Gör att vår lista inte får ett standardvärde*/
+}
+
+nav ul li a{
+    color:rgb(255, 255, 255); /*Bestämemr färg på våra länkar*/
+    text-decoration:none; /*Tar bort all standard-dekoration på texten*/
+    font-size:20px; /*Bestämmer storlek på text*/
+    font-weight:bold; /*Bestämmer tjocklek på text*/
+    text-transform:uppercase; /*Gör att våra länkar består av stora bokstäver*/
+    padding:0px 120px; /*Skapar mellanrum runt element, innanför borders*/
+}
+
+div.TeslaInfo{
+    margin-left:20px; /*Skapar mellanrum runt element på vänster sida*/
+    font-size:larger; /*Bestämmer storlek på text*/
+    font-weight:900; /*Bestämmer tjocklek på text*/
+}
+
+div.TeslaInfo2{
+
+    font-size:larger; /*Bestämmer storlek på text*/
+    font-weight:900; /*Bestämmer tjocklek på text*/
+    margin-top:20px; /*Skapar mellanrum runt element från toppen*/
+    margin-left:1000px; /*Skapar mellanrum runt element på vänster sida*/
+}
+
+img{
+    width: 700px; /*Bestämmer bredd på mina bilder*/
+    height: 450px; /*Bestämmer höjd på mina bilder*/
+}
+
+table, th, td{
+    border:1px solid rgb(255, 255, 255); /*Skapar en border med en viss färg och runda hörn runt tabellen*/
+    border-width:2px; /*Bestämmer tjocklek på border*/
+    border-collapse: separate; /*Gör så att kanterna i borders separeras*/
+    border-radius:10px; /*Definierar avståndet mellan elementen och hörnen*/
+    float:left; /*Gör att vår icke-ordnade lista "flyter" åt vänster*/
+    padding:10px; /*Skapar mellanrum runt element, innanför borders*/
+    font-size:larger; /*Bestämmer storlek på text*/
+    font-weight:900; /*Bestämmer tjocklek på text*/
+    margin-left:65px; /*Skapar mellanrum runt element på vänster sida*/
+    margin-bottom:10px; /*Skapar mellanrum runt element från botten*/
+}
+
+body{
+    font-size:larger; /*Bestämmer storlek på text*/
+    background-image:url(purpleblue.jpg); /*Lägger en viss bild som bakgrundsbild*/
+}

@@ -1,0 +1,123 @@
+*{
+    margin:0; /*Skapar mellanrum runt element*/
+    padding:0; /*Skapar mellanrum runt element, innanför borders*/
+    box-sizing:border-box; /*Gör att "padding" och "border" kan inkluderas i höjden och bredden*/
+    font-family:'Courier New'; /*Bestämmer vilken font en text ska ha*/
+}
+
+/*LoVe Focus HAte*/
+
+a:link{ /*När man trycker på obesökta länkar*/
+    color:rgb(255, 255, 255); /*Ger en viss färg till länken*/
+} 
+
+a:visited{ /*När man har besökt länken*/
+    color:rgb(226, 11, 208); /*Ger en viss färg till länken*/
+}
+
+a:focus{ /*När man t.ex använder tab-funktionen på tangentbordet så lyser länkarna med grön färg*/
+    color:rgb(19, 228, 19); /*Ger en viss färg till länken*/
+}
+
+a:hover{ /*När muspekaren ligger på länken*/
+    color:aqua; /*Ger en viss färg till länken*/
+}
+
+a:active{ /*När länken är nedtryckt*/
+    color:black; /*Ger en viss färg till länken*/
+}
+
+nav{
+    width:100%; /*Bestämmer bredd på vår navbar*/
+    height:75px; /*Bestämmer höjd på vår navbar*/
+    background-color:rgb(107, 102, 102); /*Bestämmer bakgrundsfärg på vår navbar*/
+    line-height:75px; /*Bestämmer linje-höjd på vår navbar*/
+    padding:0px 100px; /*Skapar mellanrum runt element, innanför borders*/
+}
+
+nav .Logo{
+    font-size:45px; /*Bestämmer storlek på text*/
+    font-weight:bold; /*Bestämmer tjocklek på text*/
+    letter-spacing:1.5px; /*Bestämmer avståndet mellan varje bokstav i en text*/
+}
+
+nav .Logo h1{
+    float:left; /*Gör att elementet "flyter" åt vänster*/
+    color:azure; /*Bestämmer färg på vår logga*/
+}
+
+nav ul{
+    float:right; /*Gör att vår icke-ordnade lista "flyter" åt höger*/
+}
+
+nav ul li{
+    display:inline-block; /*Gör att våra list-objekt kan anta enga höjd- och breddvärden*/
+    list-style:none; /*Gör att vår lista inte får ett standardvärde*/
+}
+
+nav ul li a{
+    color:rgb(255, 255, 255); /*Bestämemr färg på våra länkar*/
+    text-decoration:none; /*Tar bort all standard-dekoration på texten*/
+    font-size:20px; /*Bestämmer storlek på text*/
+    font-weight:bold; /*Bestämmer tjocklek på text*/
+    text-transform:uppercase; /*Gör att våra länkar består av stora bokstäver*/
+    padding:0px 120px; /*Skapar mellanrum runt element, innanför borders*/
+}
+
+.parent {
+    display: grid; /*Skapar ett gridbaserat layout-system*/
+    grid-template-columns: repeat(2, 1fr); /*Gör att vi har 2 kolumer med en bredd på 1 fr*/ 
+    grid-template-rows: repeat(2, 1fr); /*Gör att vi har 2 rader med en bredd på 1 fr*/
+    height:100vh; /*Bestämmer höjden på vår grid*/
+    width:100vw; /*Bestämmer bredden på vår grid*/
+    }
+    
+    .div1 { 
+        grid-area: 1 / 2 / 2 / 3; /*Bestämmer t.ex storlek på grid-rutorna och var de ska ligga*/
+        background-image:url("star.jpg"); /*Lägger en viss bild som bakgrundsbild*/
+        background-size:cover; /*Får bilden att täcka hela bakgrunden*/
+        background-position:center; /*Centrerar bakgrundsbilden*/
+        color:rgb(255, 255, 255); /*Bestämmer färg på texten*/
+    }
+
+    ol > li {
+        background: lightgreen; /*Ger min ordnade lista en viss färg*/
+    }
+
+ol{
+    font-weight: 700; /*Bestämmer tjocklek på text*/
+    font-size: larger; /*Bestämmer storlek på text*/
+    padding: 20px; /*Skapar mellanrum runt element, innanför borders*/
+    border: double 5px rgb(252, 248, 249); /*Skapar en border med 2 "layers"*/
+}
+
+    .div2 { 
+        grid-area: 2 / 2 / 3 / 3; /*Bestämmer t.ex storlek på grid-rutorna och var de ska ligga*/
+        background-image:url("rocketinfo.jpg"); /*Lägger en viss bild som bakgrundsbild*/
+        background-position: center; /*Centrerar bakgrundsbilden*/
+    }
+    .div3 { 
+        grid-area: 1 / 1 / 3 / 2; /*Bestämmer t.ex storlek på grid-rutorna och var de ska ligga*/
+        color: rgb(189, 192, 196); /*Bestämmer färg på texten*/
+        padding-left: 15px; /*Skapar mellanrum runt element, innanför borders*/
+        padding-right: 15px; /*Skapar mellanrum runt element, innanför borders*/
+        display: flex; /*Gör så att informationen på skärmen kan ändras på ett flexibelt sätt*/
+        font-size: larger; /*Bestämmer storlek på texten*/
+        font-weight: 900; /*Bestämmer tjocklek på texten*/
+        justify-content: center; /*Samlar informationen i mitten (x-led)*/
+        align-items: center; /*Bestämmer var någonstans informationen ska ligga*/
+        background-image:url("imageedit_3_9455500781.jpg"); /*Lägger en viss bild som bakgrundsbild*/
+        background-size:cover; /*Får bilden att täcka hela bakgrunden*/
+        background-position:center; /*Centrerar bakgrundsbilden*/
+    }
+
+footer{
+    padding-top: 50px; /*Skapar mellanrum runt element, innanför borders*/
+    font-weight:800; /*Bestämmer storlek på texten*/
+    letter-spacing:2.5px; /*Bestämmer avståndet mellan varje bokstav i en text*/
+    text-align: center; /*Placerar texten i mitten av footern*/
+    color: rgb(255, 255, 255); /*Bestämmer färg på texten*/
+    background-color: rgb(25, 26, 97); /*Bestämmer bakgrundsfärgen*/
+    margin-left:12px; /*Skapar mellanrum runt element på vänster sida*/
+    height:15vh; /*Bestämmer höjden på vår footer*/
+}
